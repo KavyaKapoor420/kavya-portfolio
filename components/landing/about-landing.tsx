@@ -35,6 +35,11 @@ export default function AboutLanding() {
       icon: SiLeetcode,
     },
     {
+      link: "https://x.com/kashyap_tweetts",
+      icon: FaXTwitter,
+      
+    }
+    {
       link: "https://github.com/Kashyap1ankit/",
       icon: FaGithub,
     },
