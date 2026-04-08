@@ -15,6 +15,7 @@ import {
 import { ThemeToggleButton } from "../theme";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
+import TypeWritingEffect from "./typewriting-effect";
 
 export default function AboutLanding() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -78,7 +79,7 @@ export default function AboutLanding() {
             <p
               className={` text-black dark:text-white text-2xl sm:text-3xl md:text-4xl ${gabarito.className} font-bold`}
             >
-              I&apos;m
+              Hi  I&apos;m
             </p>
             <Image
               alt="me"
@@ -91,9 +92,11 @@ export default function AboutLanding() {
             <p
               className={`text-2xl sm:text-3xl md:text-4xl ${gabarito.className} font-bold bg-gradient-to-r from-blue-400 to-lightBlue text-transparent bg-clip-text`}
             >
-              Kavya Kapoor
+               Kavya Kapoor
             </p>
           </div>
+
+          <TypeWritingEffect />
         </div>
 
         <div className="flex flex-row items-center gap-x-4 ">

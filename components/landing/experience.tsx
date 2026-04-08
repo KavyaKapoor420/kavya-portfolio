@@ -15,6 +15,38 @@ interface dataType {
   image: string;
 }
 
+function highlightExperienceText(text: string) {
+  const highlightedText = text
+    .replace(
+      "40,000+ women agents",
+      `<span class="font-bold text-red-500"><span class="underline decoration-white underline-offset-4">40,000+ women</span> agents</span>`
+    )
+    .replace(
+      "RESTful APIs",
+      `<span class="font-bold text-red-500 underline decoration-white underline-offset-4">RESTful APIs</span>`
+    )
+    .replace(
+      "JWT authentication",
+      `<span class="font-bold text-red-500"><span class="underline decoration-white underline-offset-4">JWT</span> authentication</span>`
+    )
+    .replace(
+      "admin moderation dashboard that reduced content quality issues by 30%",
+      `<span>admin moderation dashboard that reduced content quality</span><span class="font-bold text-red-500"> issues by 30%</span>`
+    )
+    .replace(
+      "multilingual conversational RAG chatbot",
+      `<span class="font-bold text-red-500">multilingual conversational <span class="underline decoration-white underline-offset-4">RAG</span> chatbot</span>`
+    )
+    .replace(
+      "ChromaDB for vector retrieval",
+      `<span class="font-bold text-red-500">ChromaDB for vector retrieval</span>`
+    );
+
+  return (
+    <span dangerouslySetInnerHTML={{ __html: highlightedText }} />
+  );
+}
+
 export default function Experience() {
   const [openedIndex, setOpenedIndex] = useState<number | null>(null);
 
@@ -112,9 +144,9 @@ export default function Experience() {
                   {e.about.map((text: string, j: number) => (
                     <li
                       key={j}
-                      className={`${hanken.className} text-sm text-gray-600 dark:text-gray-500`}
+                      className={`${hanken.className} text-sm font-medium leading-7 text-gray-700 dark:text-gray-300`}
                     >
-                      {text}
+                      {highlightExperienceText(text)}
                     </li>
                   ))}
                 </motion.ul>

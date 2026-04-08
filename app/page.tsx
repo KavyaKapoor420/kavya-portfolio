@@ -5,11 +5,12 @@ import HomeProjects from "@/components/landing/home-project";
 import { gabarito } from "@/public/font";
 import GhActivityCard from "gh-activity-card/components/gh-activity-card";
 import Skills from "@/components/landing/skiils";
+import { GridBackground } from "@/components/ui/GridBackground";
 
 export default function Home() {
   return (
-    <>
-      <div className="mx-auto pt-12 flex flex-col gap-18 mb-24 ">
+    <GridBackground className="pt-12">
+      <div className="mx-auto flex flex-col gap-18 mb-24">
         <AboutLanding />
         <Experience />
         <HomeProjects />
@@ -27,6 +28,6 @@ export default function Home() {
         </div>
         <EducationCard />
       </div>
-    </>
+    </GridBackground>
   );
 }
