@@ -55,13 +55,9 @@ export default function HomeProjects() {
                   className="w-full rounded-2xl "
                 />
 
-                <Link
-                  href={`https://${e.deployed}`}
-                  target="_blank"
-                  className="absolute top-2 sm:top-4 right-4 bg-gray-100/80 dark:bg-gray-700/80  rounded-lg "
-                >
+                <div className="absolute top-2 sm:top-4 right-4 bg-gray-100/80 dark:bg-gray-700/80 rounded-lg pointer-events-none">
                   <IconLink className="p-2 rounded-lg size-8 text-black dark:text-white" />
-                </Link>
+                </div>
 
                 <div className="rounded-lg p-2 px-2 w-fit bg-white dark:bg-black absolute -bottom-4 right-4 flex flex-row gap-x-2">
                   {e.tech.map((TechIcon, i) => (
