@@ -20,7 +20,7 @@ export default function Home() {
             Github Contribution
           </p>
           <GhActivityCard
-            username="kashyap1ankit"
+            username="kavyakapoor420"
             className="text-black dark:text-white"
           />
         </div>

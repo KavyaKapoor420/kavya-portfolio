@@ -3,7 +3,7 @@
 import { gabarito, hanken, manrope } from "@/public/font";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import {
   IconArrowBadgeRight,
   IconCalendarWeek,
@@ -14,38 +14,28 @@ import {
 } from "@tabler/icons-react";
 import { ThemeToggleButton } from "../theme";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { SiLeetcode } from "react-icons/si";
+import { MdEmail, MdPhone } from "react-icons/md";
 
 export default function AboutLanding() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
 
-  useEffect(() => {
-    // Load Twitter script on client
-    const script = document.createElement("script");
-    script.src = "https://platform.twitter.com/widgets.js";
-    script.async = true;
-    document.body.appendChild(script);
-  }, []);
-
   const socials = [
     {
-      link: "https://x.com/kashyap_tweetts",
-      icon: SiLeetcode,
+      link: "tel:+919717926088",
+      icon: MdPhone,
     },
     {
-      link: "https://x.com/kashyap_tweetts",
-      icon: FaXTwitter,
-      
-    }
+      link: "mailto:kavyakapoor412@gmail.com",
+      icon: MdEmail,
+    },
     {
-      link: "https://github.com/Kashyap1ankit/",
+      link: "https://github.com/kavyakapoor420",
       icon: FaGithub,
     },
 
     {
-      link: "https://www.linkedin.com/in/ankit-kashyap-coder/",
+      link: "https://www.linkedin.com/in/kavyakapoor420/",
       icon: FaLinkedinIn,
     },
   ];
@@ -65,7 +55,7 @@ export default function AboutLanding() {
   return (
     <div className="flex flex-col gap-6 px-4" id="about">
       <Link
-        href={"https://cal.com/kashyap-ankit"}
+        href={"mailto:kavyakapoor412@gmail.com?subject=Portfolio%20Enquiry"}
         target="_blank"
         className=" duration-500 flex gap-x-2 items-center  w-fit  p-2 rounded-full bg-black dark:bg-white/90 shadow-[inset_0_-4px_6px_rgba(255,255,255,0.5)] dark:shadow-[inset_0_-4px_6px_rgba(0,0,0,0.45)] group active:scale-75"
       >
@@ -101,7 +91,7 @@ export default function AboutLanding() {
             <p
               className={`text-2xl sm:text-3xl md:text-4xl ${gabarito.className} font-bold bg-gradient-to-r from-blue-400 to-lightBlue text-transparent bg-clip-text`}
             >
-              Ankit Kashyap
+              Kavya Kapoor
             </p>
           </div>
         </div>
@@ -129,17 +119,18 @@ export default function AboutLanding() {
       <p
         className={`${hanken.className} text-sm text-gray-500 dark:text-gray-400`}
       >
-        I&apos;m a Full Stack Web Developer and Open Source Contributor with
-        expertise in building scalable applications using Next.js, NoSql/Sql,
-        and Tailwind CSS. Skilled in translating pixel-perfect Figma designs
-        into responsive web pages. I bring a solution-driven approach to
-        crafting impactful digital products.
+        I&apos;m a Computer Science student, backend-focused developer, and open
+        source contributor who builds full-stack products, RAG applications,
+        and accessible web experiences. My work spans REST APIs, JWT-based
+        auth, MERN applications, and AI-powered systems, with hands-on
+        experience from Haqdarshak, hackathons, and community-driven
+        engineering projects.
       </p>
 
       <div className="flex flex-row flex-wrap justify-between items-center gap-y-6">
         <div className="flex flex-wrap gap-6">
           <Link
-            href={"mailto:kashyap25ankit@gmail.com?subject=Work Enquiry"}
+            href={"mailto:kavyakapoor412@gmail.com?subject=Work%20Enquiry"}
             className="flex gap-2  px-4 items-center bg-lightBlue dark:bg-darkBlue text-white dark:text-lightBlue  p-2 w-fit text-sm rounded-lg inset-shadow-sm inset-shadow-white/50  dark:inset-shadow-white/20 "
           >
             <IconHeartHandshake stroke={1} size={18} />
@@ -147,9 +138,7 @@ export default function AboutLanding() {
           </Link>
 
           <Link
-            href={
-              "https://drive.google.com/file/d/1zsG0jFtzW2zpLr8ojBemGBb9gsUNhaCi/view?usp=sharing"
-            }
+            href={"/Kavya_Kapoor_Resume.pdf"}
             className="flex gap-2  px-4 items-center  p-2 w-fit bg-lightBlue dark:bg-darkBlue text-white dark:text-lightBlue text-sm rounded-lg inset-shadow-sm inset-shadow-white/50  dark:inset-shadow-white/20 "
             target="_blank"
             rel="noopener noreferre"

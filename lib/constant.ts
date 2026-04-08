@@ -1,44 +1,32 @@
 import { DiRedis } from "react-icons/di";
 import { RiBearSmileFill } from "react-icons/ri";
 import {
-  IconBrandCss3,
-  IconBrandFramerMotion,
   IconBrandMongodb,
-  IconBrandNextjs,
   IconBrandNodejs,
   IconBrandReact,
   IconBrandTailwind,
   IconBrandTypescript,
 } from "@tabler/icons-react";
-
 import {
-  SiJavascript,
-  SiReact,
+  SiBootstrap,
   SiExpress,
   SiGit,
-  SiMongoose,
+  SiJavascript,
+  SiMongodb,
+  SiMysql,
+  SiNodedotjs,
+  SiPassport,
+  SiPostgresql,
   SiPrisma,
+  SiReact,
+  SiReactquery,
+  SiReactrouter,
   SiRecoil,
+  SiSocketdotio,
   SiTailwindcss,
+  SiTrpc,
   SiTypescript,
   SiZod,
-  SiSocketdotio,
-  SiNextdns,
-  SiHono,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiDocker,
-  SiMongodb,
-  SiPostgresql,
-  SiBootstrap,
-  SiPassport,
-  SiNpm,
-  SiTrpc,
-  SiReactrouter,
-  SiReactquery,
-  SiFramer,
-  SiExpo,
-  SiEjs,
 } from "react-icons/si";
 import {
   GitMergeIcon,
@@ -49,44 +37,43 @@ import { IconSvgElement } from "@hugeicons/react";
 
 export const skills = [
   {
-    title: "Javascript",
+    title: "C",
     icon: SiJavascript,
   },
   {
-    title: "Typescript",
+    title: "C++",
     icon: SiTypescript,
   },
   {
-    title: "Node js",
+    title: "JavaScript",
+    icon: SiJavascript,
+  },
+  {
+    title: "SQL",
+    icon: SiMysql,
+  },
+  {
+    title: "ReactJS",
+    icon: SiReact,
+  },
+  {
+    title: "NodeJS",
     icon: SiNodedotjs,
   },
-
   {
-    title: "React",
-    icon: SiReact,
-  },
-  {
-    title: "React Native",
-    icon: SiReact,
-  },
-  {
-    title: "Expo",
-    icon: SiExpo,
-  },
-  {
-    title: "Express.js",
+    title: "ExpressJS",
     icon: SiExpress,
   },
   {
-    title: "Nextjs",
-    icon: SiNextdotjs,
+    title: "TailwindCSS",
+    icon: SiTailwindcss,
   },
   {
-    title: "Honojs",
-    icon: SiHono,
+    title: "Material UI",
+    icon: SiReactquery,
   },
   {
-    title: "PostgresSQL",
+    title: "MySQL",
     icon: SiPostgresql,
   },
   {
@@ -94,78 +81,52 @@ export const skills = [
     icon: SiMongodb,
   },
   {
-    title: "Redis",
-    icon: DiRedis,
-  },
-  {
-    title: "Websockets",
+    title: "REST APIs",
     icon: SiSocketdotio,
   },
   {
-    title: "Docker",
-    icon: SiDocker,
+    title: "JWT",
+    icon: DiRedis,
   },
   {
-    title: "Tailwind",
+    title: "DSA",
     icon: SiTailwindcss,
   },
   {
-    title: "Bootstrap",
+    title: "OOP",
     icon: SiBootstrap,
   },
   {
-    title: "React Router",
+    title: "DBMS",
     icon: SiReactrouter,
   },
   {
-    title: "React Query",
-    icon: SiReactquery,
+    title: "System Design",
+    icon: SiTrpc,
   },
   {
-    title: "Prisma",
-    icon: SiPrisma,
-  },
-  {
-    title: "Mongoose",
-    icon: SiMongoose,
-  },
-  {
-    title: "Git",
-    icon: SiGit,
-  },
-  {
-    title: "Recoil",
+    title: "MERN Stack",
     icon: SiRecoil,
   },
   {
-    title: "Zustand",
+    title: "Leadership",
+    icon: SiPrisma,
+  },
+  {
+    title: "Event Management",
     icon: RiBearSmileFill,
   },
   {
-    title: "Auth.js",
-    icon: SiNextdns,
+    title: "Public Speaking",
+    icon: SiGit,
+  },
+  {
+    title: "Strategic Thinking",
+    icon: SiZod,
   },
   {
     title: "Passport.js",
     icon: SiPassport,
-  },
-
-  {
-    title: "Npm",
-    icon: SiNpm,
-  },
-
-  {
-    title: "Zod",
-    icon: SiZod,
-  },
-  {
-    title: "tRpc",
-    icon: SiTrpc,
-  },
-  {
-    title: "Framer Motion",
-    icon: SiFramer,
   },
 ];
 
@@ -204,317 +165,161 @@ export type tabType = "/" | "/projects" | "/contributions";
 
 export const allProjects = [
   {
-    name: "JobJunction",
+    name: "QueryAtlas",
     description:
-      "Job portal where user can see job postings & can also post one for community if they know.",
-    deployed: "jj.10xdevlab.in",
-    github: "https://github.com/Kashyap1ankit/Jobjunction",
-    tech: [
-      IconBrandNextjs,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      SiPostgresql,
-      IconBrandFramerMotion,
-    ],
-    image: "/jj.webp",
-    category: "Product",
-  },
-
-  {
-    name: "Earnkit",
-    description: "Designed & coded landing page for earnkit",
-    deployed: "earnkit.10xdevlab.in",
-    github: "https://github.com/Kashyap1ankit/EarnKit",
-    tech: [
-      IconBrandNextjs,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      IconBrandFramerMotion,
-    ],
-    image: "/earnkit.webp",
-    category: "Revamp",
-  },
-  {
-    name: "Yuga",
-    description: "Developed multiple pages ui in the 7-day long freelancing. ",
-    deployed: "www.joinyuga.com/",
-    github: null,
-    tech: [IconBrandNextjs, IconBrandTypescript, IconBrandTailwind],
-    image: "/yuga.webp",
-    category: "Freelancing",
-  },
-
-  {
-    name: "Logofy",
-    description:
-      "Helps to generate professional logos for their company. Describe in few words what you want in the logo and get it as svg",
-    deployed: "logofy.10xdevlab.in",
-    github: null,
-    tech: [
-      IconBrandNextjs,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      SiPostgresql,
-      IconBrandFramerMotion,
-    ],
-    image: "/logofy.webp",
-    category: "Product",
-  },
-
-  {
-    name: "Referrush",
-    description: "Designed & coded landing page for earnkit",
-    deployed: "referrush-five.vercel.app/",
-    github: "https://github.com/Kashyap1ankit/referrush",
-    tech: [
-      IconBrandNextjs,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      IconBrandFramerMotion,
-    ],
-    image: "/referush.webp",
-    category: "Revamp",
-  },
-
-  {
-    name: "Techtalkies",
-    description:
-      "Platform where user can come & write blogs. If user don't know what to write then they can use Ai to write blogs by giving topic name",
-    deployed: "techtalkies.10xdevlab.in",
-    github: "https://github.com/Kashyap1ankit/Techtalkies",
+      "Multi-document RAG platform with hybrid retrieval that combines BM25 keyword search and semantic embeddings, supports simultaneous multi-PDF uploads, and lets users tune retrieval weights for better search accuracy.",
+    deployed: "query-atlas-rag-kavya-kapoor-projec.vercel.app/",
+    github: "https://github.com/kavyakapoor420",
     tech: [
       IconBrandReact,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      SiPostgresql,
-      IconBrandFramerMotion,
-      SiHono,
-    ],
-    image: "/techtalkies.webp",
-    category: "Product",
-  },
-
-  {
-    name: "Waiting List ",
-    description: "Designed & coded waiting list page for doscsmin",
-    deployed: "docsmin.com",
-    github: null,
-    tech: [
-      IconBrandNextjs,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      SiPostgresql,
-      IconBrandFramerMotion,
-    ],
-    image: "/docsmin.webp",
-    category: "Revamp",
-  },
-
-  {
-    name: "DevTerminus",
-    description:
-      "Get to know about your skill set & how much are your replacable from Ai",
-    deployed: "dev-terminus.10xdevlab.in/",
-    github: "https://github.com/Kashyap1ankit/dev-terminus",
-    tech: [
-      IconBrandNextjs,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      SiPostgresql,
-      IconBrandFramerMotion,
-    ],
-    image: "/devterminus.webp",
-    category: "Product",
-  },
-
-  {
-    name: "Docsmin Landing",
-    description:
-      "Unresponsive landing page designed & coded for a file sharing platform",
-    deployed: "docsmin-landing.vercel.app/",
-    github: "https://github.com/Kashyap1ankit/docsmin-landing",
-    tech: [
-      IconBrandNextjs,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      IconBrandFramerMotion,
-    ],
-    image: "/docsmin-landing.webp",
-    category: "Revamp",
-  },
-
-  {
-    name: "Gh-Activity-Card",
-    description:
-      "Npm package that helps developers to showcase their Github contribution in last 1 year. Developed backend for this & integrated frontend",
-    deployed: "npmjs.com/package/gh-activity-card",
-    github: "https://github.com/Kashyap1ankit/gh-activity-card",
-    tech: [
-      IconBrandNextjs,
       IconBrandTypescript,
       IconBrandTailwind,
       IconBrandNodejs,
-      SiExpress,
+      IconBrandMongodb,
     ],
-    image: "/gh.webp",
-    category: "Product",
-  },
-
-  {
-    name: "Puch Ai",
-    description:
-      "Implemented a cleaner UI, enhanced content structure, and improved user experience by highlighting core features, user benefits, and call-to-action elements. The new layout better communicates the products value proposition and aligns with current design trends, resulting in a more engaging and conversion-optimized landing page.",
-    deployed: "puch.10xdevlab.in",
-    github: "https://github.com/Kashyap1ankit/pai-revamp",
-    tech: [
-      IconBrandNextjs,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      IconBrandFramerMotion,
-    ],
-    image: "/puch.webp",
-    category: "Revamp",
-  },
-
-  {
-    name: "Vidstash",
-    description:
-      "Created the ui & authentication part of a video uploading platform where user can come .. create accounts and then upload videos and can share it to friends either publically or privately",
-    deployed: "vidstash.10xdevlab.in/",
-    github: "https://github.com/Kashyap1ankit/vidstash",
-    tech: [
-      IconBrandNextjs,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      SiPostgresql,
-    ],
-    image: "/vidstash.webp",
-    category: "Revamp",
-  },
-
-  {
-    name: "TechKareer Revamp",
-    description:
-      "Implemented a cleaner UI, enhanced content structure, and improved user experience by highlighting core features, user benefits, and call-to-action elements. The new layout better communicates the products value proposition and aligns with current design trends, resulting in a more engaging and conversion-optimized landing page.",
-    deployed: "techkareer.10xdevlab.in",
-    github: "https://github.com/Kashyap1ankit/techkareer-revamp",
-    tech: [
-      IconBrandNextjs,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      IconBrandFramerMotion,
-    ],
-    image: "/techkareer.webp",
-    category: "Revamp",
+    image: "/jj.webp",
+    category: "RAG",
   },
   {
-    name: "PayUsVia",
+    name: "Documind",
     description:
-      "Platform where user signup and they can do transactions with the existing user on website.",
-    deployed: "paytm-frontend-ankits-projects-5c12be11.vercel.app",
-    github: "https://github.com/Kashyap1ankit/paytm-frontend",
+      "AI-powered PDF assistant built with a React and TypeScript frontend plus a Python and Flask-style backend flow. It chunks uploaded PDFs, generates embeddings, stores vectors for semantic search, and enables document Q&A and summarization.",
+    deployed: "github.com/kavyakapoor420/Documind-Rag-Project-Langchain",
+    github: "https://github.com/kavyakapoor420/Documind-Rag-Project-Langchain",
     tech: [
       IconBrandReact,
+      IconBrandTypescript,
       IconBrandTailwind,
+      SiExpress,
+      SiGit,
+    ],
+    image: "/earnkit.webp",
+    category: "AI",
+  },
+  {
+    name: "BetterWeb",
+    description:
+      "AI-driven accessibility Chrome extension built to personalize browsing for users with ADHD, dyslexia, sensory sensitivities, visual impairments, and related cognitive conditions through adaptive visual, voice, and sensory-overload controls.",
+    deployed: "gtbit-hack-mvp.vercel.app/",
+    github: "https://github.com/kavyakapoor420/WebEase-project",
+    tech: [SiJavascript, SiReact, IconBrandTailwind, SiGit],
+    image: "/yuga.webp",
+    category: "Accessibility",
+  },
+  {
+    name: "URL Shortener",
+    description:
+      "Streamlined full-stack utility for creating, managing, and tracking shortened URLs efficiently with a clean dashboard workflow and secure backend support.",
+    deployed: "github.com/kavyakapoor420/url-shortener",
+    github: "https://github.com/kavyakapoor420/url-shortener",
+    tech: [
+      IconBrandReact,
       IconBrandNodejs,
       SiExpress,
       IconBrandMongodb,
+      IconBrandTailwind,
     ],
-    image: "/paytm.webp",
-    category: "Product",
+    image: "/logofy.webp",
+    category: "Utility",
   },
   {
-    name: "Airbnb Clone",
+    name: "Wanderlust",
     description:
-      "A hotel booking wesbite similar to airbnb. User can signup and see the listings and also see & give reviews on experience",
-    deployed: null,
-    github: "https://github.com/Kashyap1ankit/Airbnb",
-    tech: [SiExpress, IconBrandCss3, IconBrandNodejs, IconBrandMongodb, SiEjs],
-    image: "/airbnb.webp",
-    category: "Product",
+      "Airbnb-style listing and review platform with secure Passport.js authentication, seamless CRUD flows for listings and reviews, and Cloudinary-powered image handling for a smooth hosting experience.",
+    deployed: "wonderlust-by34.onrender.com/listings",
+    github: "https://github.com/kavyakapoor420/Wanderlust",
+    tech: [
+      IconBrandNodejs,
+      SiExpress,
+      IconBrandMongodb,
+      SiBootstrap,
+      SiPassport,
+    ],
+    image: "/referush.webp",
+    category: "Full Stack",
+  },
+  {
+    name: "StudyNotion",
+    description:
+      "MERN-based ed-tech platform with separate student and instructor flows, Razorpay payments, JWT and Bcrypt authentication, Cloudinary media handling, and responsive React plus Redux experiences for course management and learning.",
+    deployed: "github.com/kavyakapoor420/StudyNotion",
+    github: "https://github.com/kavyakapoor420/StudyNotion",
+    tech: [
+      IconBrandReact,
+      IconBrandNodejs,
+      SiExpress,
+      IconBrandMongodb,
+      IconBrandTailwind,
+    ],
+    image: "/techtalkies.webp",
+    category: "MERN",
   },
 ];
 
 export const contriubutionData = [
   {
-    organisation: "100xdev",
+    organisation: "Kestra",
     logo: "https://appx-wsb-gcp-mcdn.akamai.net.in/subject/2023-01-17-0.3698267942851394.jpg",
-    organisation_github: "https://github.com/code100x",
+    organisation_github: "https://github.com/kestra-io/kestra",
     contribution: [
       {
-        title: "Created the notification system & web app ",
-        link: "https://github.com/code100x/job-board/pull/544",
-      },
-      {
-        title: "Fixed the overall performace of the website",
-        link: "https://github.com/code100x/job-board/pull/557",
-      },
-      {
-        title: "Created the bookmark functionality for saving job postings",
-        link: "https://github.com/code100x/job-board/pull/518",
-      },
-      {
-        title: "Added the checks before deleting account ensuring security",
-        link: "https://github.com/code100x/job-board/pull/513",
-      },
-      {
-        title: "Fixed Bug for account deletion",
-        link: "https://github.com/code100x/job-board/pull/508",
+        title: "fix(core): make password requirement descriptive",
+        link: "https://github.com/kestra-io/kestra/pull/13483",
       },
     ],
   },
   {
-    organisation: "Sanity",
+    organisation: "Apache Beam Fork",
     logo: "https://www.toornify.com/sanity_esports_logo.jpg",
-    organisation_github: "https://github.com/dinxsh/sanity",
+    organisation_github: "https://github.com/kavyakapoor420/AacheBugFix",
     contribution: [
       {
-        title: "Revamped the contact page",
-        link: "https://github.com/dinxsh/sanity/pull/156",
+        title: "Fix: Extract gauge metrics in addMetricResult method",
+        link: "https://github.com/kavyakapoor420/AacheBugFix/pull/1",
       },
+    ],
+  },
+  {
+    organisation: "OpenClimateFix",
+    logo: "https://appx-wsb-gcp-mcdn.akamai.net.in/subject/2023-01-17-0.3698267942851394.jpg",
+    organisation_github: "https://github.com/openclimatefix/uk-pv-national-gsp-api",
+    contribution: [
       {
-        title: "Created the notification Dialog ",
-        link: "https://github.com/dinxsh/sanity/pull/136",
+        title: "Refactor get_start_datetime and related logic",
+        link: "https://github.com/openclimatefix/uk-pv-national-gsp-api/pull/498",
       },
+    ],
+  },
+  {
+    organisation: "Talawa Admin",
+    logo: "https://www.toornify.com/sanity_esports_logo.jpg",
+    organisation_github: "https://github.com/PalisadoesFoundation/talawa-admin",
+    contribution: [
       {
-        title: "Fixed dependency issue in codebase",
-        link: "https://github.com/dinxsh/sanity/pull/134",
+        title: "Stable selector E2E test fix",
+        link: "https://github.com/PalisadoesFoundation/talawa-admin/pull/7094",
       },
+    ],
+  },
+  {
+    organisation: "Code4GovTech",
+    logo: "https://appx-wsb-gcp-mcdn.akamai.net.in/subject/2023-01-17-0.3698267942851394.jpg",
+    organisation_github: "https://github.com/Code4GovTech/C4GT",
+    contribution: [
       {
-        title: "Revamped the teams page & added search functionality",
-        link: "https://github.com/dinxsh/sanity/pull/150",
+        title: "DMP issue involvement for Haqdarshak agent support platform",
+        link: "https://github.com/Code4GovTech/C4GT/issues/553",
       },
+    ],
+  },
+  {
+    organisation: "CliMA",
+    logo: "https://www.toornify.com/sanity_esports_logo.jpg",
+    organisation_github: "https://github.com/CliMA/ClimaCoupler.jl",
+    contribution: [
       {
-        title: "Added husky & pretteir for formatting code in development",
-        link: "https://github.com/dinxsh/sanity/pull/151",
-      },
-      {
-        title: "Added the backend logic for contact email",
-        link: "https://github.com/dinxsh/sanity/pull/159",
-      },
-      {
-        title: "Ensured Authorization on tournament & bracket creation",
-        link: "https://github.com/dinxsh/sanity/pull/186",
-      },
-      {
-        title: "Fixed the responsiveness & few bugs on landing page",
-        link: "https://github.com/dinxsh/sanity/pull/182",
-      },
-      {
-        title: "Fixed the navbar scroll white line issue",
-        link: "https://github.com/dinxsh/sanity/pull/172",
-      },
-      {
-        title: "Changed the join community btn to signup button",
-        link: "https://github.com/dinxsh/sanity/pull/171",
-      },
-      {
-        title: "Changed the icon & removed the tick/cross button",
-        link: "https://github.com/dinxsh/sanity/pull/170",
-      },
-      {
-        title: "Increased the accesibility from 83 to 94",
-        link: "https://github.com/dinxsh/sanity/pull/163",
+        title: "Expose DateTime clock parameter",
+        link: "https://github.com/CliMA/ClimaCoupler.jl/pull/1827",
       },
     ],
   },
@@ -522,37 +327,35 @@ export const contriubutionData = [
 
 export const experienceData = [
   {
-    company: "Freelancing",
-    role: "Fullstack Developer",
-    timeframe: "March 2025 - Current",
+    company: "Haqdarshak",
+    role: "Backend Developer Intern",
+    timeframe: "June 2025 - August 2025",
     about: [
-      "Delivered end-to-end freelance projects for clients, building responsive web and mobile applications using Next.js and RN.",
-      "Converted Figma designs into polished, high-performance user interfaces optimized for all devices",
-      "Integrated scalable backends with MongoDB, Prisma, and AWS S3 for data management and media storage",
-      "Implemented secure authentication and user management",
+      "Engineered and deployed a scalable AI-powered knowledge sharing platform, similar to Stack Overflow, to centralize institutional knowledge for 40,000+ women agents resolving welfare scheme queries.",
+      "Implemented RESTful APIs with role-based access control for agents and admins, JWT authentication, and an admin moderation dashboard that reduced content quality issues by 30%.",
+      "Built a multilingual conversational RAG chatbot using Docling for document ingestion, ChromaDB for vector retrieval, and Sarvam AI for speech and translation across Indian regional languages.",
     ],
-
     image: "/stealth.jpeg",
   },
   {
-    company: "SparkStrand",
-    role: "Fullstack Intern",
-    timeframe: "July 2024 - Oct 2024",
+    company: "Maharaja Agrasen Institute of Technology",
+    role: "Bachelor of Technology - Computer Science and Engineering",
+    timeframe: "2023 - 2027",
     about: [
-      "Collaborated in a team of 7 to develop a full-stack web application using Next.js and MongoDB",
-      "Utilized tech like Prisma, AWS S3, and Clerk to create multiple API routes",
-      "Transformed pixel-perfect Figma designs into responsive, high-quality web pages",
+      "Pursuing B.Tech in Computer Science and Engineering in Delhi, India.",
+      "Building strong foundations in data structures and algorithms, object-oriented programming, DBMS, system design, and full-stack web development.",
+      "Actively applying classroom learning through internships, hackathons, open source, and production-style software projects.",
     ],
     image: "/sparkstand.jpg",
   },
   {
-    company: "Edtech Startup",
-    role: "TA Intern",
-    timeframe: "Nov 2023 - Mar 2024",
+    company: "Achievements",
+    role: "Competitive Programming, Hackathons, and Community Work",
+    timeframe: "2024 - 2025",
     about: [
-      "Resolved over 1,050 MERN stack queries for students, providing in-depth coding support",
-      "Assisted more than 5,000 students throughout their coding journeys",
-      "Achieved a 4.97/5 rating during my internship",
+      "Ranked 5410 out of 25,604 participants in a LeetCode DSA contest and solved 400+ DSA problems on the platform.",
+      "Selected as 1 of 105 out of 4,200+ applicants for Code4GovTech to help build Haqdarshak's AI-based agent support platform using NLP and RAG.",
+      "Won 1st place out of 200+ teams at IIIT Delhi Hack4Health Hackathon with an 80,000 prize, placed Top 22 at IIT Delhi's CodeHive Blockchain Hackathon, and finished runner-up at IIMT College Hackathon.",
     ],
     image: "/stealth.jpeg",
   },

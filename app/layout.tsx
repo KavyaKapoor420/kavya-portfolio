@@ -6,8 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "Ankit Kashyap",
-  description: "Ankit Kashyap Portfolio",
+  title: "Kavya Kapoor",
+  description: "Kavya Kapoor Portfolio",
   icons: "/x.webp",
 };
 
