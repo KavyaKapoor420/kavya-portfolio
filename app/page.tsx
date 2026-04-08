@@ -1,4 +1,5 @@
 import AboutLanding from "@/components/landing/about-landing";
+import EducationCard from "@/components/landing/education-card";
 import Experience from "@/components/landing/experience";
 import HomeProjects from "@/components/landing/home-project";
 import { gabarito } from "@/public/font";
@@ -24,6 +25,7 @@ export default function Home() {
             className="text-black dark:text-white"
           />
         </div>
+        <EducationCard />
       </div>
     </>
   );

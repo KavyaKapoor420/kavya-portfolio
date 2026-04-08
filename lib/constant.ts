@@ -31,6 +31,8 @@ import {
 import {
   GitMergeIcon,
   Home04Icon,
+  Note01Icon,
+  RacingFlagIcon,
   VisualStudioCodeIcon,
 } from "@hugeicons/core-free-icons";
 import { IconSvgElement } from "@hugeicons/react";
@@ -152,6 +154,20 @@ export const navLinks: navLinksType[] = [
     link: "/contributions",
     value: "/contributions",
   },
+  {
+    name: "Blog",
+    icon: Note01Icon,
+    icon2: Note01Icon,
+    link: "/blog",
+    value: "/blog",
+  },
+  {
+    name: "Hackathon",
+    icon: RacingFlagIcon,
+    icon2: RacingFlagIcon,
+    link: "/hackathon",
+    value: "/hackathon",
+  },
 ];
 
 export interface navLinksType {
@@ -161,7 +177,12 @@ export interface navLinksType {
   link: string;
   value: tabType;
 }
-export type tabType = "/" | "/projects" | "/contributions";
+export type tabType =
+  | "/"
+  | "/projects"
+  | "/contributions"
+  | "/blog"
+  | "/hackathon";
 
 export const allProjects = [
   {
@@ -337,26 +358,16 @@ export const experienceData = [
     ],
     image: "/stealth.jpeg",
   },
-  {
-    company: "Maharaja Agrasen Institute of Technology",
-    role: "Bachelor of Technology - Computer Science and Engineering",
-    timeframe: "2023 - 2027",
-    about: [
-      "Pursuing B.Tech in Computer Science and Engineering in Delhi, India.",
-      "Building strong foundations in data structures and algorithms, object-oriented programming, DBMS, system design, and full-stack web development.",
-      "Actively applying classroom learning through internships, hackathons, open source, and production-style software projects.",
-    ],
-    image: "/sparkstand.jpg",
-  },
-  {
-    company: "Achievements",
-    role: "Competitive Programming, Hackathons, and Community Work",
-    timeframe: "2024 - 2025",
-    about: [
-      "Ranked 5410 out of 25,604 participants in a LeetCode DSA contest and solved 400+ DSA problems on the platform.",
-      "Selected as 1 of 105 out of 4,200+ applicants for Code4GovTech to help build Haqdarshak's AI-based agent support platform using NLP and RAG.",
-      "Won 1st place out of 200+ teams at IIIT Delhi Hack4Health Hackathon with an 80,000 prize, placed Top 22 at IIT Delhi's CodeHive Blockchain Hackathon, and finished runner-up at IIMT College Hackathon.",
-    ],
-    image: "/stealth.jpeg",
-  },
 ];
+
+export const educationData = {
+  college: "Maharaja Agrasen Institute of Technology",
+  degree: "Bachelor of Technology - Computer Science and Engineering",
+  timeframe: "2023 - 2027",
+  location: "Delhi, India",
+  about: [
+    "Pursuing B.Tech in Computer Science and Engineering in Delhi, India.",
+    "Building strong foundations in data structures and algorithms, object-oriented programming, DBMS, system design, and full-stack web development.",
+    "Actively applying classroom learning through internships, hackathons, open source, and production-style software projects.",
+  ],
+};
