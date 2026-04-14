@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
-import { FaLinkedinIn } from "react-icons/fa";
+// import { FaLinkedinIn } from "react-icons/fa";
 
 const photos = [
   "/kavya.jpg",
