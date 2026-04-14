@@ -84,9 +84,12 @@ export default function AboutLanding() {
             <Image
               alt="me"
               aria-label="me"
-              width={500}
-              height={500}
-              src={"/x.webp"}
+              width={400}
+              height={400}
+              quality={80}
+              objectFit="contain"
+              loading="lazy"
+              src={"/kavya.jpg"}
               className="size-12 rounded-md ring-2 ring-white/90 shadow-md shadow-black dark:shadow-white/70 -rotate-6"
             />
             <p

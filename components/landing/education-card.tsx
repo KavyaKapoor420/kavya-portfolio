@@ -26,7 +26,7 @@ export default function EducationCard() {
           <div className="flex flex-col gap-6 sm:flex-row sm:items-start">
             <Image
               alt="profile"
-              src="/x.webp"
+              src="/kavya.jpg"
               width={160}
               height={160}
               className="h-28 w-28 rounded-2xl object-cover ring-1 ring-white/10"

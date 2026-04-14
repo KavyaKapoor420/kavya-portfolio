@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/next";
 export const metadata: Metadata = {
   title: "Kavya Kapoor",
   description: "Kavya Kapoor Portfolio",
-  icons: "/x.webp",
+  icons: "/kavya.jpg",
 };
 
 export default function RootLayout({

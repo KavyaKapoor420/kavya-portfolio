@@ -7,10 +7,12 @@ import GhActivityCard from "gh-activity-card/components/gh-activity-card";
 import Skills from "@/components/landing/skiils";
 import { GridBackground } from "@/components/ui/GridBackground";
 
+
 export default function Home() {
   return (
     <GridBackground className="pt-12">
       <div className="mx-auto flex flex-col gap-18 mb-24">
+
         <AboutLanding />
         <Experience />
         <HomeProjects />
