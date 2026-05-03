@@ -1,7 +1,6 @@
 "use client";
 
 import { gabarito, hanken } from "@/public/font";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { IconBriefcase, IconCircleArrowRight } from "@tabler/icons-react";
@@ -42,9 +41,7 @@ function highlightExperienceText(text: string) {
       `<span class="font-bold text-red-500">ChromaDB for vector retrieval</span>`
     );
 
-  return (
-    <span dangerouslySetInnerHTML={{ __html: highlightedText }} />
-  );
+  return <span dangerouslySetInnerHTML={{ __html: highlightedText }} />;
 }
 
 export default function Experience() {
@@ -62,26 +59,22 @@ export default function Experience() {
         Experience
       </p>
 
-      <div className=" flex flex-col items-start justify-start gap-6 sm:gap-8 md:gap-12  w-full">
+      <div className="flex w-full flex-col items-start justify-start gap-6 sm:gap-8 md:gap-12">
         {experienceData.map((e: dataType, i: number) => {
           const isOpen = openedIndex === i;
 
           return (
-            <div
-              className="flex flex-row items-start gap-x-2 px-4 w-full"
-              key={i}
-            >
+            <div className="flex w-full flex-row items-start gap-x-2 px-4" key={i}>
               <div>
                 <IconBriefcase
                   size={36}
-                  className="border border-neutral-200 dark:border-neutral-800 p-2 rounded-lg text-black dark:text-white"
+                  className="rounded-lg border border-neutral-200 p-2 text-black dark:border-neutral-800 dark:text-white"
                 />
               </div>
 
-              {/* second one  */}
-              <div className=" cursor-pointer flex flex-col gap-4 sm:gap-0 w-full  ">
+              <div className="flex w-full cursor-pointer flex-col gap-4 sm:gap-0">
                 <div
-                  className="flex flex-col sm:flex-row  gap-4 sm:items-center sm:justify-between  w-full"
+                  className="flex w-full flex-col gap-4 sm:flex-row sm:items-center sm:justify-between"
                   onClick={() => toggleIndex(i)}
                 >
                   <div className="flex items-center gap-2">
@@ -95,26 +88,20 @@ export default function Experience() {
 
                         <IconCircleArrowRight
                           size={24}
-                          className={`text-gray-500 ${
-                            isOpen ? "rotate-90" : ""
-                          }`}
+                          className={`text-gray-500 ${isOpen ? "rotate-90" : ""}`}
                         />
                       </div>
                       <p
-                        className={`${hanken.className} text-gray-500 text-sm font-medium`}
+                        className={`${hanken.className} text-sm font-medium text-gray-500`}
                       >
                         {e.role}
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex  place-self-end sm:place-self-start sm:items-center gap-2  ">
+                  <div className="flex place-self-end gap-2 sm:place-self-start sm:items-center">
                     <p
-                      className={`${hanken.className}  text-sm font-medium ${
-                        e.timeframe === "March 2025 - Current"
-                          ? "text-green-600"
-                          : "text-gray-500"
-                      }`}
+                      className={`${hanken.className} text-sm font-medium text-gray-500`}
                     >
                       {e.timeframe}
                     </p>
@@ -137,8 +124,8 @@ export default function Experience() {
                     delay: 0,
                     type: "tween",
                   }}
-                  className={`duration-500 mx-auto w-full  ${
-                    isOpen ? "list-disc flex flex-col gap-4 mt-4" : "hidden"
+                  className={`mx-auto w-full duration-500 ${
+                    isOpen ? "mt-4 flex list-disc flex-col gap-4" : "hidden"
                   }`}
                 >
                   {e.about.map((text: string, j: number) => (

@@ -27,6 +27,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "vidstash-gamma.vercel.app",
       },
+      {
+        protocol: "https",
+        hostname: "i.scdn.co",
+      },
     ],
   },
 };

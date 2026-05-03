@@ -50,3 +50,23 @@ body {
   --color-titleBgWhite: #101012;
   --color-custom-gray: #363636;
 }
+
+.music-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 0;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
+}
+
+.music-slider::-moz-range-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  background: #ffffff;
+  border: 0;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.25);
+}

@@ -2,6 +2,7 @@ import AboutLanding from "@/components/landing/about-landing";
 import EducationCard from "@/components/landing/education-card";
 import Experience from "@/components/landing/experience";
 import HomeProjects from "@/components/landing/home-project";
+import MusicCard from "@/components/landing/music-card";
 import { gabarito } from "@/public/font";
 import GhActivityCard from "gh-activity-card/components/gh-activity-card";
 import Skills from "@/components/landing/skiils";
@@ -15,6 +16,7 @@ export default function Home() {
 
         <AboutLanding />
         <Experience />
+        <MusicCard />
         <HomeProjects />
         <Skills />
         <div className="flex flex-col gap-6 ">
