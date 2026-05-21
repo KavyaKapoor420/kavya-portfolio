@@ -1,10 +1,8 @@
-"use client";
 import { gabarito, hanken } from "@/public/font";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
 import {
-  Icon,
+  type Icon,
   IconArrowBigDown,
   IconLink,
   IconProps,
@@ -27,8 +25,6 @@ interface dataType {
 }
 
 export default function HomeProjects() {
-  const router = useRouter();
-
   return (
     <div id="projects" className="flex flex-col gap-6">
       <p
@@ -93,13 +89,13 @@ export default function HomeProjects() {
         })}
       </div>
 
-      <div
+      <Link
+        href="/projects"
         className="border dark:border-neutral-900  dark:hover:border-neutral-800  text-center p-2 rounded-lg inset-shadow-sm inset-shadow-white/50  dark:inset-shadow-white/20  cursor-pointer duration-300 w-fit  bg-lightBlue dark:bg-darkBlue hover:bg-lightBlue  dark:hover:bg-darkBlue dark:text-lightBlue text-white text-sm flex items-center gap-2 self-end mr-4 border group"
-        onClick={() => router.push("/projects")}
       >
         <p className={`${hanken.className} font-bold`}> See more</p>
         <IconArrowBigDown size={16} className="group-hover:rotate-180" />
-      </div>
+      </Link>
     </div>
   );
 }

@@ -1,12 +1,12 @@
 "use client";
 
 import { navLinks, navLinksType } from "@/lib/constant";
-import { useActiveTab } from "@/store/store";
 import Link from "next/link";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { useState } from "react";
 import { hanken } from "@/public/font";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   return (
@@ -21,7 +21,7 @@ export default function Navbar() {
 }
 
 function NavItemComp({ e }: { e: navLinksType }) {
-  const { activeTab, setActiveTab } = useActiveTab();
+  const pathname = usePathname();
   const [hovered, setHovered] = useState(false);
 
   const leavingAnimate = {
@@ -51,13 +51,12 @@ function NavItemComp({ e }: { e: navLinksType }) {
   return (
     <Link
       href={e.link}
-      onClick={() => setActiveTab(e.value)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       <div
         className={`cursor-pointer duration-500 relative ${
-          activeTab === e.value
+          pathname === e.value
             ? "bg-gray-300 dark:bg-gray-800"
             : "bg-transparent"
         } py-2 px-6 rounded-[15px] duration-500 `}

@@ -1,5 +1,3 @@
-"use client";
-
 import { gabarito, hanken, manrope } from "@/public/font";
 import Image from "next/image";
 import Link from "next/link";

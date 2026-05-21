@@ -1,5 +1,3 @@
-"use client";
-
 import { educationData } from "@/lib/constant";
 import { gabarito, hanken } from "@/public/font";
 import Image from "next/image";

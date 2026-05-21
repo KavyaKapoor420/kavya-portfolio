@@ -7,6 +7,7 @@ import {
   IconBrandTailwind,
   IconBrandTypescript,
 } from "@tabler/icons-react";
+
 import {
   SiBootstrap,
   SiExpress,
@@ -198,24 +199,8 @@ export const allProjects = [
       IconBrandNodejs,
       IconBrandMongodb,
     ],
-    image: "/jj.webp",
+    image: "/RAG-project.png",
     category: "RAG",
-  },
-  {
-    name: "Documind",
-    description:
-      "AI-powered PDF assistant built with a React and TypeScript frontend plus a Python and Flask-style backend flow. It chunks uploaded PDFs, generates embeddings, stores vectors for semantic search, and enables document Q&A and summarization.",
-    deployed: "github.com/kavyakapoor420/Documind-Rag-Project-Langchain",
-    github: "https://github.com/kavyakapoor420/Documind-Rag-Project-Langchain",
-    tech: [
-      IconBrandReact,
-      IconBrandTypescript,
-      IconBrandTailwind,
-      SiExpress,
-      SiGit,
-    ],
-    image: "/earnkit.webp",
-    category: "AI",
   },
   {
     name: "BetterWeb",
@@ -224,15 +209,15 @@ export const allProjects = [
     deployed: "gtbit-hack-mvp.vercel.app/",
     github: "https://github.com/kavyakapoor420/WebEase-project",
     tech: [SiJavascript, SiReact, IconBrandTailwind, SiGit],
-    image: "/yuga.webp",
+    image: "/BetterWeb.png",
     category: "Accessibility",
   },
   {
-    name: "URL Shortener",
+    name: "StudyNotion",
     description:
-      "Streamlined full-stack utility for creating, managing, and tracking shortened URLs efficiently with a clean dashboard workflow and secure backend support.",
-    deployed: "github.com/kavyakapoor420/url-shortener",
-    github: "https://github.com/kavyakapoor420/url-shortener",
+      "MERN-based ed-tech platform with separate student and instructor flows, Razorpay payments, JWT and Bcrypt authentication, Cloudinary media handling, and responsive React plus Redux experiences for course management and learning.",
+    deployed: "studynotion-frontend.vercel.app/",
+    github: "https://github.com/kavyakapoor420/StudyNotion",
     tech: [
       IconBrandReact,
       IconBrandNodejs,
@@ -240,8 +225,8 @@ export const allProjects = [
       IconBrandMongodb,
       IconBrandTailwind,
     ],
-    image: "/logofy.webp",
-    category: "Utility",
+    image: "/Studynotion-project.png",
+    category: "MERN",
   },
   {
     name: "Wanderlust",
@@ -256,15 +241,15 @@ export const allProjects = [
       SiBootstrap,
       SiPassport,
     ],
-    image: "/referush.webp",
+    image: "/Wanderlust-project.png",
     category: "Full Stack",
   },
   {
-    name: "StudyNotion",
+    name: "URL Shortener",
     description:
-      "MERN-based ed-tech platform with separate student and instructor flows, Razorpay payments, JWT and Bcrypt authentication, Cloudinary media handling, and responsive React plus Redux experiences for course management and learning.",
-    deployed: "github.com/kavyakapoor420/StudyNotion",
-    github: "https://github.com/kavyakapoor420/StudyNotion",
+      "Streamlined full-stack utility for creating, managing, and tracking shortened URLs efficiently with a clean dashboard workflow and secure backend support.",
+    deployed: "github.com/kavyakapoor420/url-shortener",
+    github: "https://github.com/kavyakapoor420/url-shortener",
     tech: [
       IconBrandReact,
       IconBrandNodejs,
@@ -272,9 +257,26 @@ export const allProjects = [
       IconBrandMongodb,
       IconBrandTailwind,
     ],
-    image: "/techtalkies.webp",
-    category: "MERN",
+    image: "/url-shortner.png",
+    category: "Utility",
   },
+  
+  // {
+  //   name: "Documind",
+  //   description:
+  //     "AI-powered PDF assistant built with a React and TypeScript frontend plus a Python and Flask-style backend flow. It chunks uploaded PDFs, generates embeddings, stores vectors for semantic search, and enables document Q&A and summarization.",
+  //   deployed: "github.com/kavyakapoor420/Documind-Rag-Project-Langchain",
+  //   github: "https://github.com/kavyakapoor420/Documind-Rag-Project-Langchain",
+  //   tech: [
+  //     IconBrandReact,
+  //     IconBrandTypescript,
+  //     IconBrandTailwind,
+  //     SiExpress,
+  //     SiGit,
+  //   ],
+  //   image: "/earnkit.webp",
+  //   category: "AI",
+  // },
 ];
 
 export const contriubutionData = [

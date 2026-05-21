@@ -1,13 +1,12 @@
 import AboutLanding from "@/components/landing/about-landing";
 import EducationCard from "@/components/landing/education-card";
 import Experience from "@/components/landing/experience";
+import GitHubActivity from "@/components/landing/github-activity";
 import HomeProjects from "@/components/landing/home-project";
 import MusicCard from "@/components/landing/music-card";
 import { gabarito } from "@/public/font";
-import GhActivityCard from "gh-activity-card/components/gh-activity-card";
-import Skills from "@/components/landing/skiils";
 import { GridBackground } from "@/components/ui/GridBackground";
-
+import Skills from "@/components/landing/skiils";
 
 export default function Home() {
   return (
@@ -25,10 +24,7 @@ export default function Home() {
           >
             Github Contribution
           </p>
-          <GhActivityCard
-            username="kavyakapoor420"
-            className="text-black dark:text-white"
-          />
+          <GitHubActivity />
         </div>
         <EducationCard />
       </div>

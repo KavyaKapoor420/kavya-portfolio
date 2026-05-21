@@ -1,23 +1,21 @@
-import {
-  Cousine,
-  Bricolage_Grotesque,
-  Manrope,
-  Hanken_Grotesk,
-} from "next/font/google";
+type FontClass = {
+  className: string;
+};
 
-export const gabarito = Bricolage_Grotesque({
-  subsets: ["latin"],
-});
+// Keep the same interface the components already expect, but avoid
+// build-time Google font fetches that can fail in restricted deploy envs.
+export const gabarito: FontClass = {
+  className: "font-gabarito",
+};
 
-export const cousine = Cousine({
-  weight: "400",
-  subsets: ["greek"],
-});
+export const cousine: FontClass = {
+  className: "font-cousine",
+};
 
-export const manrope = Manrope({
-  subsets: ["cyrillic"],
-});
+export const manrope: FontClass = {
+  className: "font-manrope",
+};
 
-export const hanken = Hanken_Grotesk({
-  subsets: ["cyrillic-ext"],
-});
+export const hanken: FontClass = {
+  className: "font-hanken",
+};
