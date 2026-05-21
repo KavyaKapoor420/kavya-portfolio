@@ -15,7 +15,7 @@ export default function Home() {
 
         <AboutLanding />
         <Experience />
-        <MusicCard />
+        
         <HomeProjects />
         <Skills />
         <div className="flex flex-col gap-6 ">
@@ -27,6 +27,7 @@ export default function Home() {
           <GitHubActivity />
         </div>
         <EducationCard />
+        <MusicCard />
       </div>
     </GridBackground>
   );
